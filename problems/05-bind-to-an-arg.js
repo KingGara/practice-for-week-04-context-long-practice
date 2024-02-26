@@ -4,9 +4,9 @@ function bindToAnArg(func, arg) {
   };
 }
 
-function bindToAnArg(func, arg) {
-  return func.bind(null, arg);
-}
+// function bindToAnArg(func, arg) {
+//   return func.bind(null, arg);
+// }
 
 
 

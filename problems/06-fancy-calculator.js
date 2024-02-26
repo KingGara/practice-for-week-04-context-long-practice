@@ -1,4 +1,4 @@
-const { Calculator } = require('./02-calculator')
+const Calculator = require('./02-calculator.js')
 
 class FancyCalculator extends Calculator {
 	constructor() {
@@ -16,12 +16,19 @@ class FancyCalculator extends Calculator {
 	}
 
 	squared() {
-		this.total * this.total
+		this.total = this.total * this.total
 		return this.total;
 	}
 
 }
 
+let fancyCalculator = new FancyCalculator();
+console.log(fancyCalculator.setTotal(5));
+console.log(fancyCalculator.squared());
+console.log(fancyCalculator.modulo(4));
+console.log(fancyCalculator.total);
+
+console.log(fancyCalculator.add(9));
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
 
